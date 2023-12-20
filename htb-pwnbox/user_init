@@ -16,3 +16,25 @@ fi
 
 # load mate-terminal profiles
 source ~/my_data/import-mate-terminal.sh
+
+# add aliases
+    # commands
+
+alias cd..='cd ..'
+alias ..='cd ..'
+alias ll='ls -oAFHcthr'
+alias h='history'
+alias wget='wget -c'
+
+    # handy new commands
+
+alias ports='netstat -tulanp'
+alias ip ='/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1'
+
+    # safety nets
+
+alias rm='rm -I --preserve-root'
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'
+
